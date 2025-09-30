@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu | Your Brand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="restro.css" />
+</head>
+<body>
+  
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="/">
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline">Sign in</button>
+        <button class="btn btn-primary">Order now</button>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <h1 class="hero-title">Discover our menu</h1>
+        <p class="hero-subtitle">Fresh, fast, and feel-good. Explore categories and find your favorites.</p>
+        <form class="search" role="search" aria-label="Search menu">
+          <label class="sr-only" for="search">Search</label>
+          <input id="search" name="q" type="search" placeholder="Search dishes, ingredients, or tags..." />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1600&auto=format&fit=crop" alt="Assorted fresh bowls and sushi on a table" />
+      </div>
+    </div>
+  </section>
+
+
+  <nav class="category-tabs" aria-label="Categories">
+    <div class="container tabs-inner">
+      <button class="tab is-active" aria-current="page">All</button>
+      <button class="tab">Sushi</button>
+      <button class="tab">Salads</button>
+      <button class="tab">Noodle bowls</button>
+      <button class="tab">Soups</button>
+      <button class="tab">Sides</button>
+      <button class="tab">Desserts</button>
+      <button class="tab">Drinks</button>
+      <button class="tab">Vegan</button>
+      <button class="tab">Gluten-free</button>
+    </div>
+  </nav>
+
+  
+  <main id="main" class="container layout">
+    
+    <aside class="filters" aria-label="Filter options">
+      <h2 class="filters-title">Filter</h2>
+      <div class="filter-group">
+        <h3 class="filter-heading">Dietary</h3>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Vegan</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Vegetarian</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Gluten-free</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>High protein</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-heading">Nutrition</h3>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Under 400 kcal</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Low sugar</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Low saturated fat</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-heading">Allergens</h3>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Nut-free</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Dairy-free</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" /> <span>Soy-free</span>
+        </label>
+      </div>
+
+      <button class="btn btn-outline w-100">Clear filters</button>
+    </aside>
+
+
+    <section class="menu">
+      <div class="menu-header">
+        <h2 class="section-title">All items</h2>
+        <div class="sort">
+          <label for="sort">Sort by</label>
+          <select id="sort" name="sort">
+            <option value="popularity">Most popular</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="calories-asc">Calories: low to high</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop" alt="Rainbow sushi platter" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Rainbow sushi platter</h3>
+            <p class="card-desc">Selection of fresh nigiri and maki with seasonal fish and veg.</p>
+            <ul class="tags" aria-label="Dietary tags">
+              <li class="tag tag-seafood">Seafood</li>
+              <li class="tag tag-spicy">Spicy</li>
+              <li class="tag tag-gf">Gluten-free</li>
+            </ul>
+          </div>
+          <div class="card-meta">
+            <div class="price">₹690</div>
+            <div class="nutrition">410 kcal</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1604908554007-061e2a086e76?q=80&w=1600&auto=format&fit=crop" alt="Sesame soba salad" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sesame soba salad</h3>
+            <p class="card-desc">Buckwheat noodles with crunchy veg, herbs, and a sesame dressing.</p>
+            <ul class="tags">
+              <li class="tag tag-vegan">Vegan</li>
+              <li class="tag tag-lf">Low fat</li>
+            </ul>
+          </div>
+          <div class="card-meta">
+            <div class="price">₹440</div>
+            <div class="nutrition">360 kcal</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1600&auto=format&fit=crop" alt="Miso soup with tofu" />
+            <span class="badge badge-new">New</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Miso soup with tofu</h3>
+            <p class="card-desc">Comforting broth with tofu, wakame, spring onion, and sesame.</p>
+            <ul class="tags">
+              <li class="tag tag-vegan">Vegan</li>
+              <li class="tag tag-gf">Gluten-free</li>
+            </ul>
+          </div>
+          <div class="card-meta">
+            <div class="price">₹220</div>
+            <div class="nutrition">110 kcal</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1542834369-f10ebf06d3cb?q=80&w=1600&auto=format&fit=crop" alt="Chicken teriyaki bowl" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Chicken teriyaki bowl</h3>
+            <p class="card-desc">Grilled chicken, teriyaki glaze, steamed rice, and seasonal greens.</p>
+            <ul class="tags">
+              <li class="tag tag-protein">High protein</li>
+            </ul>
+          </div>
+          <div class="card-meta">
+            <div class="price">₹520</div>
+            <div class="nutrition">540 kcal</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Add</button>
+            <button class="btn btn-ghost">Details</button>
+          </div>
+        </article>
+
+    
+      </div>
+
+
+      <nav class="pagination" aria-label="Pagination">
+        <button class="page-btn is-active" aria-current="page">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Next</button>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-title">Jastro</h3>
+        <p>Feel-good food, made fresh. Order for pickup, delivery, or dine in.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">X</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Nutrition</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Company</h3>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Legal</h3>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Cookie settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Jastro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
